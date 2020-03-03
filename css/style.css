@@ -1,0 +1,420 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive;
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.row:after{
+    clear: both;
+    content: "";
+    height: 0;
+    display: block;
+
+}
+
+/* inicio header */
+
+.headersup{
+    background-color: #21242e;
+    padding: 20px 0px;
+
+}
+
+.headersup a{
+    color: white;
+    text-decoration: none;
+}
+
+header .headersup .container div{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+
+/* header .headersup .container div:nth-child(n+3){
+    text-align: right;
+}
+ */
+header .headersup .container div i{
+    color: #fa573a;
+}
+
+header nav{
+    padding: 20px 20px;
+}
+
+header .headersup .container div a span{
+    display: none;
+}
+
+header nav .logo{
+    max-width: 100px;
+    height: auto;
+    float: left;
+
+}
+
+header nav .hamburguesa{
+    float: right;
+    cursor: pointer;
+}
+header nav .hamburguesa .linea{
+    border-top: 2px solid #aaa;
+    width: 30px;
+    margin-bottom: 10px;
+
+}
+
+header nav ul{
+    padding-top: 60px;
+}
+
+header nav ul li{
+    text-align: center;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    padding: 15px 0px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+
+}
+
+header nav ul li a:hover{
+    color: #fa573a
+
+}
+
+header nav ul li:last-child a{
+    border: none;
+}
+
+/*tablet*/
+
+@media (min-width: 37.500em){
+    .headersup{
+        background-color: #21242e;
+    }
+
+
+.headersup{
+    padding: 20px 10px;
+    font-size: 70%;
+}
+
+header .headersup .container div:nth-child(n){
+    text-align: left;
+}
+
+header .headersup .container div:nth-child(n+3){
+    text-align: right;
+}
+
+header .headersup .container div a span{
+    display: inline-block;
+}
+
+header nav .hamburguesa{
+    float: none;
+    display: none;
+}
+header nav ul{
+    float: right;
+    padding-top: 0px;
+
+}
+header nav ul li{
+    text-align: left;
+    display: inline-block;
+}
+
+header nav ul li a{
+   
+    border-bottom: 0px;
+    padding: 10px 0px 0px 10px;
+}
+
+
+@media (min-width: 56.250em){
+    .headersup{
+        font-size: 100%;
+    }
+
+}
+
+
+}
+/* fin header */
+
+/*inicio hero*/
+
+.hero {
+    background-image: url('../images/fondo.jpg');
+    /* height: 80vh; */
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: soft-light;
+    background-color: rgb(60,60,60);
+}
+
+.hero>div{
+    padding: 12% 10%;
+
+}
+
+.hero>div h1{
+    font-size: 2.75em;
+    color: white;
+    font-family: 'Handlee', cursive;
+}
+
+.hero>div h2{
+    font-size: 1.5em;
+    color: #fa573a;
+    margin: .8em 0;
+}
+
+.hero>div p{
+    color: white;
+}
+
+.boton{
+    background-color: #fa573a;
+    color: white;
+    display: inline-block;
+    padding: .9em;
+    margin: .8em 0;
+    border: 1px solid #fa573a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.boton:hover{
+    background-color: transparent;
+    color: #fa573a;
+}
+
+.hero .social li{
+    display: inline-block;
+
+}
+
+.hero .social li a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    margin-right: 15px; 
+}
+
+@media (min-width: 37.500em){
+
+    .hero{
+        height: 70vh;
+    }
+}
+
+
+/*fin hero*/
+
+/*inicio main*/
+
+main section{
+    padding: 50px 0px;
+}
+
+main section h2{
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;   
+}
+
+main section h2 span{
+    color: #fa573a;  
+}
+
+main section .underline{
+    width: 9em;
+    margin: 0 auto;
+    position: relative;
+    color: #fa573a;
+}
+
+main section .underline hr{
+    border-color: #fa573a;
+}
+
+main section .underline span{
+    font-weight: 700;
+    position: absolute;
+    display: block;
+    top: -7px;
+    left: 4.25em;
+}
+
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+main section .flex article{
+    padding: 20px 10px;
+    border-bottom: 1px solid #444;
+}
+
+main section .flex .icon{
+    color: #fa573a;
+    border: 2px solid #fa573a;
+    padding: 10px;
+    font-size: 150%;   
+}
+
+main section article h3{
+    font-weight: 700;
+    margin: 15px 0px;
+    font-size: 120%;  
+}
+
+main section article p{
+    color: #aaa; 
+    margin-bottom: 10px;
+}
+
+.fa-truck-moving{
+    transform: rotateY(180deg);
+}
+
+main section article .enlace{
+    color: #fa573a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main section article .enlace:hover i{
+    transform: translateX(10px);
+    transition: 1s;
+}
+
+/* Seccion 2 */
+
+main .columna{
+    width: 100%;
+    padding: 10px;
+}
+
+main h4{
+color: #fa573a;
+font-size: 110%;
+margin-bottom: 10px;
+}
+
+main section .imagen{
+    width: 90%;
+    cursor: pointer;
+}
+
+main section .imagen .marco{
+    border: 3px solid #fa573a;
+    transform: rotateZ(10deg);
+    transition: transform 1s;
+}
+
+main section .imagen img{
+    transform: rotateZ(-10deg);
+    transition: transform 1s;
+    display: block;
+
+}
+
+main section .imagen:hover .marco, main section .imagen:hover img{
+    transform: rotateZ(0deg);
+}
+
+
+/* Fin seccion 2*/
+
+@media (min-width: 37.500em){
+    
+    main section .flex article{
+        width:50%;
+        border: 0px;
+        padding: 20px;
+    }
+
+    main section .flex article:last-child{
+        width: 100%;
+    }
+
+    main section .flex article:nth-child(2){
+        border-left: 1px solid #444;
+    }
+
+    
+}
+
+@media (min-width: 56.250em){
+
+    main section .flex article{
+        width:33%;
+        border-left: 1px solid #444;
+    }
+    main section .flex article:last-child{
+        width: 33%;
+
+}
+
+main .columna{
+    width: 50%;
+}
+
+}
+
+/*fin main*/
+
+/* Footer Inicio */
+
+footer{
+    background-color: #21242e;
+    padding: 20px 0px;
+    color: white;
+
+
+}
+
+footer a{
+    color: #fa573a;
+    text-decoration: none;
+
+}
+
+/* Fin Footer */
